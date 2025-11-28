@@ -1,21 +1,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Mapa de Congregaciones</title>
-  <meta charset="utf-8" />
+  <meta charset="utf-8">
+  <title>Mapa de Congregaciones en Uruguay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  
   <style>
+    body { font-family: Arial, sans-serif; margin:0; padding:0; }
+    h2 { text-align: center; margin: 10px 0; }
     #map { height: 90vh; width: 100%; }
   </style>
 </head>
 <body>
-  <h2>Mapa de Congregaciones de en Uruguay</h2>
+  <h2>Mapa de Congregaciones en Uruguay</h2>
   <div id="map"></div>
 
+  <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  
   <script>
-    var map = L.map('map').setView([-32.5228, -55.7658], 7); // centro de Uruguay
+    // Inicializar mapa centrado en Uruguay
+    const map = L.map('map').setView([-32.5228, -55.7658], 7);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
@@ -28,7 +36,7 @@
       else return 'red';
     }
 
-    // Cargar data.json desde la misma carpeta
+    // Cargar datos desde data.json
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
@@ -47,7 +55,8 @@
             `Con necesidad de apoyo: ${item.necesidad_apoyo}`
           );
         });
-      });
+      })
+      .catch(err => console.error('Error cargando data.json:', err));
   </script>
 </body>
 </html>
