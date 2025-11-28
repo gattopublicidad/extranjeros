@@ -1,4 +1,4 @@
-# Mapa de Congregaciones de en Uruguay
+# Mapa de Congregaciones en Uruguay
 
 Este proyecto es un **mapa interactivo** de Uruguay que muestra todas las congregaciones, indicando:
 
