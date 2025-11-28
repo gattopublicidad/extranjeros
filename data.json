@@ -162,8 +162,8 @@
   },
   {
     "nombre": "Norte, Montevideo",
-    "lat": -34.8565,
-    "lng": -56.1911,
+    "lat": -34.856500,
+    "lng": -56.191200,
     "total_extranjeros": 11,
     "necesidad_apoyo": 0
   },
@@ -239,8 +239,8 @@
   },
   {
     "nombre": "Goes, Montevideo",
-    "lat": -34.8796,
-    "lng": -56.1792,
+    "lat": -34.879600,
+    "lng": -56.179200,
     "total_extranjeros": 9,
     "necesidad_apoyo": 0
   },
@@ -288,8 +288,8 @@
   },
   {
     "nombre": "Piedras Blancas, Montevideo",
-    "lat": -34.8167,
-    "lng": -56.1379,
+    "lat": -34.816800,
+    "lng": -56.137900,
     "total_extranjeros": 7,
     "necesidad_apoyo": 3
   },
