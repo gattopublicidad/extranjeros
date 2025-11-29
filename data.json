@@ -210,13 +210,6 @@
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Cerrito, Montevideo",
-    "lat": -34.846736,
-    "lng": -56.152745,
-    "total_extranjeros": 17,
-    "necesidad_apoyo": 5
-  },
-  {
     "nombre": "Cordón, Montevideo",
     "lat": -34.902868,
     "lng": -56.172021,
@@ -244,19 +237,40 @@
     "total_extranjeros": 9,
     "necesidad_apoyo": 0
   },
+   {
+    "nombre": "Cerrito, Montevideo",
+    "lat": -34.846736,
+    "lng": -56.152745,
+    "total_extranjeros": 17,
+    "necesidad_apoyo": 5
+  },
   {
     "nombre": "Hipódromo, Montevideo",
-    "lat": -34.8467,
-    "lng": -56.1527,
+    "lat": -34.846700,
+    "lng": -56.152700,
     "total_extranjeros": 1,
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Jardines, Montevideo",
+    "nombre": "Maroñas, Montevideo",
     "lat": -34.852066,
     "lng": -56.126926,
+    "total_extranjeros": 31,
+    "necesidad_apoyo": 2
+  },
+  {
+    "nombre": "Jardines, Montevideo",
+    "lat": -34.8520,
+    "lng": -56.1269,
     "total_extranjeros": 4,
     "necesidad_apoyo": 1
+  },
+  {
+    "nombre": "Punta de Rieles, Montevideo",
+    "lat": -34.8519,
+    "lng": -56.1269,
+    "total_extranjeros": 13,
+    "necesidad_apoyo": 0
   },
   {
     "nombre": "Kilómetro 16, Montevideo",
@@ -294,13 +308,6 @@
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Maroñas, Montevideo",
-    "lat": -34.852,
-    "lng": -56.1269,
-    "total_extranjeros": 31,
-    "necesidad_apoyo": 2
-  },
-  {
     "nombre": "Nuevo Paris, Montevideo",
     "lat": -34.844901,
     "lng": -56.243456,
@@ -333,13 +340,6 @@
     "lat": -34.856514,
     "lng": -56.191262,
     "total_extranjeros": 29,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Punta de Rieles, Montevideo",
-    "lat": -34.8519,
-    "lng": -56.1269,
-    "total_extranjeros": 13,
     "necesidad_apoyo": 0
   },
   {
