@@ -358,15 +358,15 @@
   },
   {
     "nombre": "Aguada, Montevideo",
-    "lat": -34.902868,
-    "lng": -56.172021,
+    "lat": -34.902000,
+    "lng": -56.172000,
     "total_extranjeros": 16,
     "necesidad_apoyo": 0
   },
   {
     "nombre": "Centro, Montevideo",
-    "lat": -34.902868,
-    "lng": -56.172021,
+    "lat": -34.902800,
+    "lng": -56.172000,
     "total_extranjeros": 29,
     "necesidad_apoyo": 0
   },
