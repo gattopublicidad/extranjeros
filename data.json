@@ -112,7 +112,7 @@
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Norte, San Carlos, Maldonado",
+    "nombre": "Norte San Carlos, Maldonado",
     "lat": -34.79465,
     "lng": -54.917926,
     "total_extranjeros": 5,
@@ -232,7 +232,7 @@
   },
   {
     "nombre": "Goes, Montevideo",
-    "lat": -34.8797,
+    "lat": -34.8798,
     "lng": -56.1792,
     "total_extranjeros": 9,
     "necesidad_apoyo": 0
@@ -308,7 +308,7 @@
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Nuevo Paris, Montevideo",
+    "nombre": "Nuevo París, Montevideo",
     "lat": -34.844901,
     "lng": -56.243456,
     "total_extranjeros": 30,
