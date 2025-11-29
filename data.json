@@ -246,8 +246,8 @@
   },
   {
     "nombre": "Hipódromo, Montevideo",
-    "lat": -34.846900,
-    "lng": -56.152700,
+    "lat": -34.846620,
+    "lng": -56.152745,
     "total_extranjeros": 1,
     "necesidad_apoyo": 0
   },
@@ -260,14 +260,14 @@
   },
   {
     "nombre": "Jardines, Montevideo",
-    "lat": -34.8530,
+    "lat": -34.8524,
     "lng": -56.126926,
     "total_extranjeros": 4,
     "necesidad_apoyo": 1
   },
   {
     "nombre": "Punta de Rieles, Montevideo",
-    "lat": -34.8531,
+    "lat": -34.8526,
     "lng": -56.126926,
     "total_extranjeros": 13,
     "necesidad_apoyo": 0
