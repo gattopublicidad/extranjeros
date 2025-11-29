@@ -8,8 +8,8 @@
   },
   {
     "nombre": "Solymar, Ciudad de la Costa",
-    "lat": -34.822705,
-    "lng": -55.961874,
+    "lat": -34.822700,
+    "lng": -55.961800,
     "total_extranjeros": 2,
     "necesidad_apoyo": 0
   },
@@ -127,8 +127,8 @@
   },
   {
     "nombre": "Paso Molino, Montevideo",
-    "lat": -34.860798,
-    "lng": -56.230251,
+    "lat": -34.860700,
+    "lng": -56.230200,
     "total_extranjeros": 3,
     "necesidad_apoyo": 0
   },
@@ -246,8 +246,8 @@
   },
   {
     "nombre": "Hipódromo, Montevideo",
-    "lat": -34.846736,
-    "lng": -56.152745,
+    "lat": -34.846700,
+    "lng": -56.152700,
     "total_extranjeros": 1,
     "necesidad_apoyo": 0
   },
@@ -281,8 +281,8 @@
   },
   {
     "nombre": "Maroñas, Montevideo",
-    "lat": -34.852066,
-    "lng": -56.126926,
+    "lat": -34.852000,
+    "lng": -56.126900,
     "total_extranjeros": 31,
     "necesidad_apoyo": 2
   },
@@ -295,8 +295,8 @@
   },
   {
     "nombre": "Punta de Rieles, Montevideo",
-    "lat": -34.852066,
-    "lng": -56.126926,
+    "lat": -34.851900,
+    "lng": -56.126900,
     "total_extranjeros": 13,
     "necesidad_apoyo": 0
   },
@@ -309,15 +309,15 @@
   },
   {
     "nombre": "Punta Gorda, Montevideo",
-    "lat": -34.872229,
-    "lng": -56.116845,
+    "lat": -34.872200,
+    "lng": -56.116800,
     "total_extranjeros": 11,
     "necesidad_apoyo": 0
   },
   {
     "nombre": "Unión, Montevideo",
-    "lat": -34.873501,
-    "lng": -56.146986,
+    "lat": -34.873500,
+    "lng": -56.146900,
     "total_extranjeros": 3,
     "necesidad_apoyo": 0
   },
@@ -330,8 +330,8 @@
   },
   {
     "nombre": "Buceo, Montevideo",
-    "lat": -34.891964,
-    "lng": -56.133319,
+    "lat": -34.891900,
+    "lng": -56.133300,
     "total_extranjeros": 2,
     "necesidad_apoyo": 0
   },
@@ -351,8 +351,8 @@
   },
   {
     "nombre": "Malvín, Montevideo",
-    "lat": -34.891964,
-    "lng": -56.133319,
+    "lat": -34.892000,
+    "lng": -56.133300,
     "total_extranjeros": 9,
     "necesidad_apoyo": 0
   },
