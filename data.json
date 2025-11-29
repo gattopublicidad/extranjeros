@@ -1,408 +1,402 @@
-[
-  {
-    "nombre": "Lomas, Ciudad de la Costa",
-    "lat": -34.822705,
-    "lng": -55.961874,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Solymar, Ciudad de la Costa",
-    "lat": -34.822700,
-    "lng": -55.961800,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "La Tuna, Canelones",
-    "lat": -34.779245,
-    "lng": -55.559656,
-    "total_extranjeros": 12,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Pando, Canelones",
-    "lat": -34.722852,
-    "lng": -55.958344,
-    "total_extranjeros": 16,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "El Paso, Montevideo",
-    "lat": -34.857268,
-    "lng": -56.048596,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Salinas, Canelones",
-    "lat": -34.772906,
-    "lng": -55.845937,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Libertad, San José",
-    "lat": -34.637493,
-    "lng": -56.616474,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Tarariras, Colonia",
-    "lat": -34.262622,
-    "lng": -57.612149,
-    "total_extranjeros": 11,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Colonia, Colonia",
-    "lat": -34.463852,
-    "lng": -57.8388,
-    "total_extranjeros": 7,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Ciudad del Plata, San José",
-    "lat": -34.759717,
-    "lng": -56.402229,
-    "total_extranjeros": 8,
-    "necesidad_apoyo": 1
-  },
-  {
-    "nombre": "Los Bulevares, Montevideo",
-    "lat": -34.835578,
-    "lng": -56.277481,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Rosario, Colonia",
-    "lat": -34.310027,
-    "lng": -57.3543,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Oeste, Salto",
-    "lat": -31.390178,
-    "lng": -57.95215,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Casavalle, Montevideo",
-    "lat": -34.824558,
-    "lng": -56.170765,
-    "total_extranjeros": 6,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Lezica, Montevideo",
-    "lat": -34.802111,
-    "lng": -56.22711,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Nuevo Paris, Montevideo",
-    "lat": -34.844901,
-    "lng": -56.243456,
-    "total_extranjeros": 30,
-    "necesidad_apoyo": 6
-  },
-  {
-    "nombre": "Capurro, Montevideo",
-    "lat": -34.875445,
-    "lng": -56.202595,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "La Paz Español, Canelones",
-    "lat": -34.760641,
-    "lng": -56.227909,
-    "total_extranjeros": 22,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Paso Molino, Montevideo",
-    "lat": -34.860700,
-    "lng": -56.230200,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "La Teja, Montevideo",
-    "lat": -34.860798,
-    "lng": -56.230251,
-    "total_extranjeros": 40,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Sayago, Montevideo",
-    "lat": -34.835136,
-    "lng": -56.200455,
-    "total_extranjeros": 15,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Norte, Las Piedras",
-    "lat": -34.725255,
-    "lng": -56.222237,
-    "total_extranjeros": 4,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Prado, Montevideo",
-    "lat": -34.856514,
-    "lng": -56.191262,
-    "total_extranjeros": 29,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Norte, Montevideo",
-    "lat": -34.856500,
-    "lng": -56.191200,
-    "total_extranjeros": 11,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Canelones",
-    "lat": -34.528928,
-    "lng": -56.280445,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Santa Rosa, Canelones",
-    "lat": -34.498244,
-    "lng": -56.033884,
-    "total_extranjeros": 9,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "San Ramón, Canelones",
-    "lat": -34.295607,
-    "lng": -55.960295,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Melo, Cerro Largo",
-    "lat": -32.365307,
-    "lng": -54.164682,
-    "total_extranjeros": 7,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Santa Lucía, Canelones",
-    "lat": -34.452475,
-    "lng": -56.389145,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Durazno",
-    "lat": -33.384271,
-    "lng": -56.524589,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Rivera Norte",
-    "lat": -30.902528,
-    "lng": -55.547272,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Blanqueada, Montevideo",
-    "lat": -34.873501,
-    "lng": -56.146986,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Cerrito, Montevideo",
-    "lat": -34.846736,
-    "lng": -56.152745,
-    "total_extranjeros": 17,
-    "necesidad_apoyo": 5
-  },
-  {
-    "nombre": "Este, Montevideo",
-    "lat": -34.879674,
-    "lng": -56.179206,
-    "total_extranjeros": 6,
-    "necesidad_apoyo": 2
-  },
-  {
-    "nombre": "Goes, Montevideo",
-    "lat": -34.879600,
-    "lng": -56.179200,
-    "total_extranjeros": 9,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Hipódromo, Montevideo",
-    "lat": -34.846700,
-    "lng": -56.152700,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Jardines, Montevideo",
-    "lat": -34.852066,
-    "lng": -56.126926,
-    "total_extranjeros": 4,
-    "necesidad_apoyo": 1
-  },
-  {
-    "nombre": "Kilómetro 16, Montevideo",
-    "lat": -34.801766,
-    "lng": -56.084537,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Los Céspedes, Montevideo",
-    "lat": -34.786494,
-    "lng": -56.140668,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Manga, Montevideo",
-    "lat": -34.816848,
-    "lng": -56.13793,
-    "total_extranjeros": 1,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Maroñas, Montevideo",
-    "lat": -34.852000,
-    "lng": -56.126900,
-    "total_extranjeros": 31,
-    "necesidad_apoyo": 2
-  },
-  {
-    "nombre": "Piedras Blancas, Montevideo",
-    "lat": -34.816800,
-    "lng": -56.137900,
-    "total_extranjeros": 7,
-    "necesidad_apoyo": 3
-  },
-  {
-    "nombre": "Punta de Rieles, Montevideo",
-    "lat": -34.851900,
-    "lng": -56.126900,
-    "total_extranjeros": 13,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Sauce, Canelones",
-    "lat": -34.645729,
-    "lng": -56.066588,
-    "total_extranjeros": 10,
-    "necesidad_apoyo": 4
-  },
-  {
-    "nombre": "Punta Gorda, Montevideo",
-    "lat": -34.872200,
-    "lng": -56.116800,
-    "total_extranjeros": 11,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Unión, Montevideo",
-    "lat": -34.873500,
-    "lng": -56.146900,
-    "total_extranjeros": 3,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Pocitos, Montevideo",
-    "lat": -34.891964,
-    "lng": -56.133319,
-    "total_extranjeros": 5,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Buceo, Montevideo",
-    "lat": -34.891900,
-    "lng": -56.133300,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Cordón, Montevideo",
-    "lat": -34.902868,
-    "lng": -56.172021,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Veracierto, Montevideo",
-    "lat": -34.872229,
-    "lng": -56.116845,
-    "total_extranjeros": 17,
-    "necesidad_apoyo": 3
-  },
-  {
-    "nombre": "Malvín, Montevideo",
-    "lat": -34.892000,
-    "lng": -56.133300,
-    "total_extranjeros": 9,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Aguada, Montevideo",
-    "lat": -34.902000,
-    "lng": -56.172000,
-    "total_extranjeros": 16,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Centro, Montevideo",
-    "lat": -34.902800,
-    "lng": -56.172000,
-    "total_extranjeros": 29,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Este, Chuy",
-    "lat": -33.693701,
-    "lng": -53.461532,
-    "total_extranjeros": 6,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Lausana, Maldonado",
-    "lat": -34.888119,
-    "lng": -54.987639,
-    "total_extranjeros": 4,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Norte, San Carlos, Maldonado",
-    "lat": -34.79465,
-    "lng": -54.917926,
-    "total_extranjeros": 5,
-    "necesidad_apoyo": 2
-  },
-  {
-    "nombre": "Oeste, Chuy",
-    "lat": -33.693,
-    "lng": -53.461,
-    "total_extranjeros": 6,
-    "necesidad_apoyo": 0
-  },
-  {
-    "nombre": "Piriápolis, Maldonado",
-    "lat": -34.871126,
-    "lng": -55.269646,
-    "total_extranjeros": 11,
-    "necesidad_apoyo": 1
-  }
-]
+{
+  "Rocha": [
+    {
+      "nombre": "Este, Chuy",
+      "lat": -33.693701,
+      "lng": -53.461532,
+      "total_extranjeros": 6,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Oeste, Chuy",
+      "lat": -33.693,
+      "lng": -53.461,
+      "total_extranjeros": 6,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Durazno": [
+    {
+      "nombre": "Durazno",
+      "lat": -33.384271,
+      "lng": -56.524589,
+      "total_extranjeros": 1,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Canelones": [
+    {
+      "nombre": "La Tuna",
+      "lat": -34.779245,
+      "lng": -55.559656,
+      "total_extranjeros": 12,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Pando",
+      "lat": -34.722852,
+      "lng": -55.958344,
+      "total_extranjeros": 16,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Salinas",
+      "lat": -34.772906,
+      "lng": -55.845937,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "San Ramón",
+      "lat": -34.295607,
+      "lng": -55.960295,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Santa Rosa",
+      "lat": -34.498244,
+      "lng": -56.033884,
+      "total_extranjeros": 9,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Santa Lucía",
+      "lat": -34.452475,
+      "lng": -56.389145,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Canelones",
+      "lat": -34.528928,
+      "lng": -56.280445,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Sauce",
+      "lat": -34.645729,
+      "lng": -56.066588,
+      "total_extranjeros": 10,
+      "necesidad_apoyo": 4
+    }
+  ],
+  "Colonia": [
+    {
+      "nombre": "Colonia",
+      "lat": -34.463852,
+      "lng": -57.8388,
+      "total_extranjeros": 7,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Rosario",
+      "lat": -34.310027,
+      "lng": -57.3543,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Tarariras",
+      "lat": -34.262622,
+      "lng": -57.612149,
+      "total_extranjeros": 11,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Cerro Largo": [
+    {
+      "nombre": "Melo",
+      "lat": -32.365307,
+      "lng": -54.164682,
+      "total_extranjeros": 7,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Maldonado": [
+    {
+      "nombre": "Lausana",
+      "lat": -34.888119,
+      "lng": -54.987639,
+      "total_extranjeros": 4,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Norte, San Carlos",
+      "lat": -34.79465,
+      "lng": -54.917926,
+      "total_extranjeros": 5,
+      "necesidad_apoyo": 2
+    },
+    {
+      "nombre": "Piriápolis",
+      "lat": -34.871126,
+      "lng": -55.269646,
+      "total_extranjeros": 11,
+      "necesidad_apoyo": 1
+    }
+  ],
+  "Rivera": [
+    {
+      "nombre": "Rivera Norte",
+      "lat": -30.902528,
+      "lng": -55.547272,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Ciudad de la Costa": [
+    {
+      "nombre": "Lomas",
+      "lat": -34.822705,
+      "lng": -55.961874,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Solymar",
+      "lat": -34.8227,
+      "lng": -55.9618,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "San José": [
+    {
+      "nombre": "Libertad",
+      "lat": -34.637493,
+      "lng": -56.616474,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Ciudad del Plata",
+      "lat": -34.759717,
+      "lng": -56.402229,
+      "total_extranjeros": 8,
+      "necesidad_apoyo": 1
+    }
+  ],
+  "Las Piedras": [
+    {
+      "nombre": "Norte, Las Piedras",
+      "lat": -34.725255,
+      "lng": -56.222237,
+      "total_extranjeros": 4,
+      "necesidad_apoyo": 0
+    }
+  ],
+  "Montevideo": [
+    {
+      "nombre": "Aguada",
+      "lat": -34.902,
+      "lng": -56.172,
+      "total_extranjeros": 16,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Blanqueada",
+      "lat": -34.873501,
+      "lng": -56.146986,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Buceo",
+      "lat": -34.8919,
+      "lng": -56.1333,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Capurro",
+      "lat": -34.875445,
+      "lng": -56.202595,
+      "total_extranjeros": 1,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Casavalle",
+      "lat": -34.824558,
+      "lng": -56.170765,
+      "total_extranjeros": 6,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Centro",
+      "lat": -34.9028,
+      "lng": -56.172,
+      "total_extranjeros": 29,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Cerrito",
+      "lat": -34.846736,
+      "lng": -56.152745,
+      "total_extranjeros": 17,
+      "necesidad_apoyo": 5
+    },
+    {
+      "nombre": "Cordón",
+      "lat": -34.902868,
+      "lng": -56.172021,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "El Paso",
+      "lat": -34.857268,
+      "lng": -56.048596,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Este",
+      "lat": -34.879674,
+      "lng": -56.179206,
+      "total_extranjeros": 6,
+      "necesidad_apoyo": 2
+    },
+    {
+      "nombre": "Goes",
+      "lat": -34.8796,
+      "lng": -56.1792,
+      "total_extranjeros": 9,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Hipódromo",
+      "lat": -34.8467,
+      "lng": -56.1527,
+      "total_extranjeros": 1,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Jardines",
+      "lat": -34.852066,
+      "lng": -56.126926,
+      "total_extranjeros": 4,
+      "necesidad_apoyo": 1
+    },
+    {
+      "nombre": "Kilómetro 16",
+      "lat": -34.801766,
+      "lng": -56.084537,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Lezica",
+      "lat": -34.802111,
+      "lng": -56.22711,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Los Bulevares",
+      "lat": -34.835578,
+      "lng": -56.277481,
+      "total_extranjeros": 1,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Los Céspedes",
+      "lat": -34.786494,
+      "lng": -56.140668,
+      "total_extranjeros": 2,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Manga",
+      "lat": -34.816848,
+      "lng": -56.13793,
+      "total_extranjeros": 1,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Maroñas",
+      "lat": -34.852,
+      "lng": -56.1269,
+      "total_extranjeros": 31,
+      "necesidad_apoyo": 2
+    },
+    {
+      "nombre": "Nuevo Paris",
+      "lat": -34.844901,
+      "lng": -56.243456,
+      "total_extranjeros": 30,
+      "necesidad_apoyo": 6
+    },
+    {
+      "nombre": "Paso Molino",
+      "lat": -34.8607,
+      "lng": -56.2302,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Piedras Blancas",
+      "lat": -34.8168,
+      "lng": -56.1379,
+      "total_extranjeros": 7,
+      "necesidad_apoyo": 3
+    },
+    {
+      "nombre": "Pocitos",
+      "lat": -34.891964,
+      "lng": -56.133319,
+      "total_extranjeros": 5,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Prado",
+      "lat": -34.856514,
+      "lng": -56.191262,
+      "total_extranjeros": 29,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Punta de Rieles",
+      "lat": -34.8519,
+      "lng": -56.1269,
+      "total_extranjeros": 13,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Punta Gorda",
+      "lat": -34.8722,
+      "lng": -56.1168,
+      "total_extranjeros": 11,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Sayago",
+      "lat": -34.835136,
+      "lng": -56.200455,
+      "total_extranjeros": 15,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "La Teja",
+      "lat": -34.860798,
+      "lng": -56.230251,
+      "total_extranjeros": 40,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Unión",
+      "lat": -34.8735,
+      "lng": -56.1469,
+      "total_extranjeros": 3,
+      "necesidad_apoyo": 0
+    },
+    {
+      "nombre": "Veracierto",
+      "lat": -34.872229,
+      "lng": -56.116845,
+      "total_extranjeros": 17,
+      "necesidad_apoyo": 3
+    }
+  ]
+}
