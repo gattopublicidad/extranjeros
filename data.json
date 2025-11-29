@@ -21,6 +21,13 @@
     "necesidad_apoyo": 0
   },
   {
+    "nombre": "La Paz Español, Canelones",
+    "lat": -34.760641,
+    "lng": -56.227909,
+    "total_extranjeros": 22,
+    "necesidad_apoyo": 0
+  },
+  {
     "nombre": "La Tuna, Canelones",
     "lat": -34.779245,
     "lng": -55.559656,
@@ -182,13 +189,6 @@
     "necesidad_apoyo": 0
   },
   {
-    "nombre": "Buceo, Montevideo",
-    "lat": -34.8919,
-    "lng": -56.1333,
-    "total_extranjeros": 2,
-    "necesidad_apoyo": 0
-  },
-  {
     "nombre": "Capurro, Montevideo",
     "lat": -34.875445,
     "lng": -56.202595,
@@ -335,11 +335,32 @@
     "total_extranjeros": 5,
     "necesidad_apoyo": 0
   },
+    {
+    "nombre": "Buceo, Montevideo",
+    "lat": -34.8919,
+    "lng": -56.1333,
+    "total_extranjeros": 2,
+    "necesidad_apoyo": 0
+  },
+    {
+    "nombre": "Malvín, Montevideo",
+    "lat": -34.892000,
+    "lng": -56.133300,
+    "total_extranjeros": 9,
+    "necesidad_apoyo": 0
+  },
   {
     "nombre": "Prado, Montevideo",
     "lat": -34.856514,
     "lng": -56.191262,
     "total_extranjeros": 29,
+    "necesidad_apoyo": 0
+  },
+   {
+    "nombre": "Norte, Montevideo",
+    "lat": -34.856500,
+    "lng": -56.191200,
+    "total_extranjeros": 11,
     "necesidad_apoyo": 0
   },
   {
@@ -376,5 +397,12 @@
     "lng": -56.116845,
     "total_extranjeros": 17,
     "necesidad_apoyo": 3
+  },
+  {
+    "nombre": "Oeste, Salto",
+    "lat": -31.390178,
+    "lng": -57.95215,
+    "total_extranjeros": 1,
+    "necesidad_apoyo": 0
   }
 ]
