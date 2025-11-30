@@ -12,9 +12,32 @@
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
     h2 { text-align: center; margin: 10px 0; }
     #map { height: 90vh; width: 100%; }
+
+    /* MENU */
+    .menu {
+      background: #333;
+      padding: 10px;
+      display: flex;
+      gap: 20px;
+    }
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-size: 16px;
+    }
+    .menu a:hover {
+      text-decoration: underline;
+    }
   </style>
 </head>
 <body>
+
+  <!-- MENÚ SUPERIOR -->
+  <div class="menu">
+    <a href="index.html">Mapa</a>
+    <a href="tabla.html">Datos en tabla</a>
+  </div>
+
   <h2>Mapa de Congregaciones en Uruguay</h2>
   <div id="map"></div>
 
@@ -29,14 +52,12 @@
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
-    // Función para asignar color según necesidad de apoyo
     function getColor(necesidad) {
       if (necesidad === 0) return 'green';
       else if (necesidad <= 2) return 'orange';
       else return 'red';
     }
 
-    // Cargar datos desde data.json
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
