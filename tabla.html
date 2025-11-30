@@ -32,6 +32,12 @@
       text-align: center;
     }
 
+    /* Texto rojo para congregaciones con necesidad */
+    .rojo {
+      color: red;
+      font-weight: bold;
+    }
+
     /* MENU */
     .menu {
       background: #333;
@@ -74,13 +80,20 @@
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
+
+        // ORDENAR: mayor necesidad_apoyo primero
+        data.sort((a, b) => b.necesidad_apoyo - a.necesidad_apoyo);
+
         const tbody = document.querySelector("#tabla tbody");
 
         data.forEach(item => {
           const row = document.createElement("tr");
 
+          // Congregaciones en rojo si necesitan apoyo
+          const claseNombre = item.necesidad_apoyo >= 1 ? "rojo" : "";
+
           row.innerHTML = `
-            <td>${item.nombre}</td>
+            <td class="${claseNombre}">${item.nombre}</td>
             <td class="num">${item.total_extranjeros}</td>
             <td class="num">${item.necesidad_apoyo}</td>
           `;
