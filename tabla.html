@@ -17,25 +17,40 @@
     table, th, td {
       border: 1px solid #666;
     }
+
     th {
       background: #333;
       color: white;
-      padding: 8px;
+      padding: 10px;
       text-align: center;
-      cursor: pointer; /* Se ve como botón */
+      cursor: pointer;
+      user-select: none;
     }
+
     td {
       padding: 8px;
     }
 
-    .num { text-align: center; }
+    /* Centrar valores numéricos */
+    .num {
+      text-align: center;
+    }
 
+    /* Congregaciones con necesidad >=1 en rojo */
     .rojo {
       color: red;
       font-weight: bold;
     }
 
-    /* MENU */
+    /* Indicadores de orden */
+    th.asc::after {
+      content: " ▲";
+    }
+    th.desc::after {
+      content: " ▼";
+    }
+
+    /* Menú superior */
     .menu {
       background: #333;
       padding: 10px;
@@ -50,19 +65,11 @@
     .menu a:hover {
       text-decoration: underline;
     }
-
-    /* Indicadores de orden */
-    th.asc::after {
-      content: " ▲";
-    }
-    th.desc::after {
-      content: " ▼";
-    }
   </style>
 </head>
 <body>
 
-  <!-- MENÚ SUPERIOR -->
+  <!-- MENÚ -->
   <div class="menu">
     <a href="index.html">Mapa</a>
     <a href="tabla.html">Datos en tabla</a>
@@ -74,6 +81,7 @@
     <thead>
       <tr>
         <th data-col="nombre">Nombre de la congregación</th>
+        <th data-col="circuito">Circuito</th>
         <th data-col="total_extranjeros">Cantidad de extranjeros</th>
         <th data-col="necesidad_apoyo">Necesitan apoyo</th>
       </tr>
@@ -83,30 +91,33 @@
 
   <script>
     let dataOriginal = [];
-    let ordenActual = {}; // guarda el estado ASC/DESC por columna
+    let ordenActual = {}; // Guarda ASC o DESC por columna
 
     fetch('data.json')
       .then(res => res.json())
       .then(data => {
         dataOriginal = data;
 
-        // Orden inicial por necesidad (descendente)
+        // Orden inicial: mayor necesidad_apoyo primero
         dataOriginal.sort((a, b) => b.necesidad_apoyo - a.necesidad_apoyo);
 
         renderTabla(dataOriginal);
       });
 
+    // Renderiza la tabla según los datos recibidos
     function renderTabla(data) {
       const tbody = document.querySelector("#tabla tbody");
-      tbody.innerHTML = ""; // limpiar antes de renderizar
+      tbody.innerHTML = "";
 
       data.forEach(item => {
         const row = document.createElement("tr");
 
+        // Nombre en rojo si hay necesidad de apoyo
         const claseNombre = item.necesidad_apoyo >= 1 ? "rojo" : "";
-        
+
         row.innerHTML = `
           <td class="${claseNombre}">${item.nombre}</td>
+          <td class="num">${item.circuito}</td>
           <td class="num">${item.total_extranjeros}</td>
           <td class="num">${item.necesidad_apoyo}</td>
         `;
@@ -115,19 +126,19 @@
       });
     }
 
-    // FUNCION DE ORDENAMIENTO
+    // Habilitar ordenar por clic en los encabezados
     document.querySelectorAll("th").forEach(th => {
       th.addEventListener("click", () => {
         const col = th.getAttribute("data-col");
 
-        // Alternar ASC / DESC
+        // Alternar entre ascendente y descendente
         ordenActual[col] = ordenActual[col] === "asc" ? "desc" : "asc";
 
-        // Ordenar datos
         const ordenado = [...dataOriginal].sort((a, b) => {
           let v1 = a[col];
           let v2 = b[col];
 
+          // Comparación alfabética si son strings
           if (typeof v1 === "string") {
             v1 = v1.toLowerCase();
             v2 = v2.toLowerCase();
@@ -140,13 +151,13 @@
           }
         });
 
-        // Quitar indicadores anteriores
+        // Limpiar indicadores anteriores
         document.querySelectorAll("th").forEach(x => x.classList.remove("asc", "desc"));
 
-        // Agregar indicador al encabezado seleccionado
+        // Agregar indicador nuevo
         th.classList.add(ordenActual[col]);
 
-        // Renderizar tabla ordenada
+        // Actualizar tabla ordenada
         renderTabla(ordenado);
       });
     });
