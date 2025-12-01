@@ -90,77 +90,103 @@
   </table>
 
   <script>
-    let dataOriginal = [];
-    let ordenActual = {}; // Guarda ASC o DESC por columna
+    <script>
+  let dataOriginal = [];
+  let ordenActual = {}; // Guarda ASC o DESC por columna
 
-    fetch('data.json')
-      .then(res => res.json())
-      .then(data => {
-        dataOriginal = data;
+  fetch('data.json')
+    .then(res => res.json())
+    .then(data => {
+      dataOriginal = data;
 
-        // Orden inicial: mayor necesidad_apoyo primero
-        dataOriginal.sort((a, b) => b.necesidad_apoyo - a.necesidad_apoyo);
+      // Orden inicial: mayor necesidad_apoyo primero
+      dataOriginal.sort((a, b) => b.necesidad_apoyo - a.necesidad_apoyo);
 
-        renderTabla(dataOriginal);
-      });
-
-    // Renderiza la tabla según los datos recibidos
-    function renderTabla(data) {
-      const tbody = document.querySelector("#tabla tbody");
-      tbody.innerHTML = "";
-
-      data.forEach(item => {
-        const row = document.createElement("tr");
-
-        // Nombre en rojo si hay necesidad de apoyo
-        const claseNombre = item.necesidad_apoyo >= 1 ? "rojo" : "";
-
-        row.innerHTML = `
-          <td class="${claseNombre}">${item.nombre}</td>
-          <td class="num">${item.circuito}</td>
-          <td class="num">${item.total_extranjeros}</td>
-          <td class="num">${item.necesidad_apoyo}</td>
-        `;
-
-        tbody.appendChild(row);
-      });
-    }
-
-    // Habilitar ordenar por clic en los encabezados
-    document.querySelectorAll("th").forEach(th => {
-      th.addEventListener("click", () => {
-        const col = th.getAttribute("data-col");
-
-        // Alternar entre ascendente y descendente
-        ordenActual[col] = ordenActual[col] === "asc" ? "desc" : "asc";
-
-        const ordenado = [...dataOriginal].sort((a, b) => {
-          let v1 = a[col];
-          let v2 = b[col];
-
-          // Comparación alfabética si son strings
-          if (typeof v1 === "string") {
-            v1 = v1.toLowerCase();
-            v2 = v2.toLowerCase();
-          }
-
-          if (ordenActual[col] === "asc") {
-            return v1 > v2 ? 1 : -1;
-          } else {
-            return v1 < v2 ? 1 : -1;
-          }
-        });
-
-        // Limpiar indicadores anteriores
-        document.querySelectorAll("th").forEach(x => x.classList.remove("asc", "desc"));
-
-        // Agregar indicador nuevo
-        th.classList.add(ordenActual[col]);
-
-        // Actualizar tabla ordenada
-        renderTabla(ordenado);
-      });
+      renderTabla(dataOriginal);
     });
+
+  // Calcular totales
+  function calcularTotales(data) {
+    const totalExtranjeros = data.reduce((sum, item) => sum + Number(item.total_extranjeros), 0);
+    const totalApoyo = data.reduce((sum, item) => sum + Number(item.necesidad_apoyo), 0);
+    return { totalExtranjeros, totalApoyo };
+  }
+
+  // Renderiza la tabla según los datos recibidos
+  function renderTabla(data) {
+    const tbody = document.querySelector("#tabla tbody");
+    tbody.innerHTML = "";
+
+    data.forEach(item => {
+      const row = document.createElement("tr");
+
+      // Nombre en rojo si hay necesidad de apoyo
+      const claseNombre = item.necesidad_apoyo >= 1 ? "rojo" : "";
+
+      row.innerHTML = `
+        <td class="${claseNombre}">${item.nombre}</td>
+        <td class="num">${item.circuito}</td>
+        <td class="num">${item.total_extranjeros}</td>
+        <td class="num">${item.necesidad_apoyo}</td>
+      `;
+
+      tbody.appendChild(row);
+    });
+
+    // Agregar fila de totales
+    const { totalExtranjeros, totalApoyo } = calcularTotales(data);
+
+    const totalRow = document.createElement("tr");
+    totalRow.style.fontWeight = "bold";
+    totalRow.style.background = "#eee";
+
+    totalRow.innerHTML = `
+      <td style="text-align:right;">Totales:</td>
+      <td></td>
+      <td class="num">${totalExtranjeros}</td>
+      <td class="num">${totalApoyo}</td>
+    `;
+
+    tbody.appendChild(totalRow);
+  }
+
+  // Habilitar ordenar por clic en los encabezados
+  document.querySelectorAll("th").forEach(th => {
+    th.addEventListener("click", () => {
+      const col = th.getAttribute("data-col");
+
+      // Alternar entre ascendente y descendente
+      ordenActual[col] = ordenActual[col] === "asc" ? "desc" : "asc";
+
+      const ordenado = [...dataOriginal].sort((a, b) => {
+        let v1 = a[col];
+        let v2 = b[col];
+
+        // Comparación alfabética si son strings
+        if (typeof v1 === "string") {
+          v1 = v1.toLowerCase();
+          v2 = v2.toLowerCase();
+        }
+
+        if (ordenActual[col] === "asc") {
+          return v1 > v2 ? 1 : -1;
+        } else {
+          return v1 < v2 ? 1 : -1;
+        }
+      });
+
+      // Limpiar indicadores anteriores
+      document.querySelectorAll("th").forEach(x => x.classList.remove("asc", "desc"));
+
+      // Agregar indicador nuevo
+      th.classList.add(ordenActual[col]);
+
+      // Actualizar tabla ordenada y totales
+      renderTabla(ordenado);
+    });
+  });
+</script>
+
   </script>
 
 </body>
