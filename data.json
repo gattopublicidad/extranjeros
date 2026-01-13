@@ -27,7 +27,7 @@
     "nombre": "La Paz Español, Canelones",
     "lat": -34.760641,
     "lng": -56.227909,
-    "total_extranjeros": 22,
+    "total_extranjeros": 24,
     "necesidad_apoyo": 0,
     "circuito": "URY 04"
   },
@@ -91,7 +91,7 @@
     "nombre": "Sauce, Canelones",
     "lat": -34.645729,
     "lng": -56.066588,
-    "total_extranjeros": 10,
+    "total_extranjeros": 18,
     "necesidad_apoyo": 4,
     "circuito": "URY 06"
   },
@@ -123,7 +123,7 @@
     "nombre": "Melo, Cerro Largo",
     "lat": -32.365307,
     "lng": -54.164682,
-    "total_extranjeros": 7,
+    "total_extranjeros": 8,
     "necesidad_apoyo": 0,
     "circuito": "URY 05"
   },
@@ -155,7 +155,7 @@
     "nombre": "Rivera Norte, Rivera",
     "lat": -30.902528,
     "lng": -55.547272,
-    "total_extranjeros": 2,
+    "total_extranjeros": 4,
     "necesidad_apoyo": 0,
     "circuito": "URY 05"
   },
@@ -219,7 +219,7 @@
     "nombre": "Capurro, Montevideo",
     "lat": -34.875445,
     "lng": -56.202595,
-    "total_extranjeros": 1,
+    "total_extranjeros": 4,
     "necesidad_apoyo": 0,
     "circuito": "URY 04"
   },
@@ -259,7 +259,7 @@
     "nombre": "Este, Montevideo",
     "lat": -34.879674,
     "lng": -56.179206,
-    "total_extranjeros": 6,
+    "total_extranjeros": 3,
     "necesidad_apoyo": 2,
     "circuito": "URY 06"
   },
@@ -267,7 +267,7 @@
     "nombre": "Goes, Montevideo",
     "lat": -34.8798,
     "lng": -56.1792,
-    "total_extranjeros": 9,
+    "total_extranjeros": 12,
     "necesidad_apoyo": 0,
     "circuito": "URY 06"
   },
@@ -355,7 +355,7 @@
     "nombre": "Nuevo París, Montevideo",
     "lat": -34.844901,
     "lng": -56.243456,
-    "total_extranjeros": 30,
+    "total_extranjeros": 31,
     "necesidad_apoyo": 6,
     "circuito": "URY 04"
   },
@@ -403,7 +403,7 @@
     "nombre": "Prado, Montevideo",
     "lat": -34.856514,
     "lng": -56.191262,
-    "total_extranjeros": 29,
+    "total_extranjeros": 30,
     "necesidad_apoyo": 0,
     "circuito": "URY 04"
   },
@@ -411,7 +411,7 @@
     "nombre": "Norte, Montevideo",
     "lat": -34.856500,
     "lng": -56.191200,
-    "total_extranjeros": 11,
+    "total_extranjeros": 16,
     "necesidad_apoyo": 0,
     "circuito": "URY 04"
   },
@@ -427,7 +427,7 @@
     "nombre": "Sayago, Montevideo",
     "lat": -34.835136,
     "lng": -56.200455,
-    "total_extranjeros": 15,
+    "total_extranjeros": 32,
     "necesidad_apoyo": 0,
     "circuito": "URY 04"
   },
@@ -462,5 +462,29 @@
     "total_extranjeros": 1,
     "necesidad_apoyo": 0,
     "circuito": "URY 03"
+  },
+  {
+    "nombre": "San José, San José",
+    "lat": -34.331938,
+    "lng": -56.716125,
+    "total_extranjeros": 1,
+    "necesidad_apoyo": 0,
+    "circuito": "URY 02"
+  },
+  {
+    "nombre": "Shangrilá, Canelones",
+    "lat": -34.846517,
+    "lng": -56.006482,
+    "total_extranjeros": 15,
+    "necesidad_apoyo": 0,
+    "circuito": "URY 03"
+  },
+  {
+    "nombre": "Progreso, Canelones",
+    "lat": -34.669573,
+    "lng": -56.216423,
+    "total_extranjeros": 2,
+    "necesidad_apoyo": 0,
+    "circuito": "URY 05"
   }
 ]
