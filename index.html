@@ -1,13 +1,13 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <title>Mapa de Congregaciones en Uruguay</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
+
   <!-- Leaflet CSS -->
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  
+
   <style>
     body { font-family: Arial, sans-serif; margin:0; padding:0; }
     h2 { text-align: center; margin: 10px 0; }
@@ -28,11 +28,51 @@
     .menu a:hover {
       text-decoration: underline;
     }
+
+    /* ===== MARCADORES ===== */
+    .marker {
+      width: 16px;
+      height: 16px;
+      border: 1px solid #000;
+    }
+
+    /* CÍRCULO */
+    .circle {
+      border-radius: 50%;
+    }
+
+    /* CUADRADO */
+    .square {
+    }
+
+    /* HEXÁGONO */
+    .hexagon {
+      position: relative;
+      width: 16px;
+      height: 9px;
+      margin-top: 4px;
+    }
+    .hexagon:before,
+    .hexagon:after {
+      content: "";
+      position: absolute;
+      width: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+    }
+    .hexagon:before {
+      bottom: 100%;
+      border-bottom: 4px solid;
+    }
+    .hexagon:after {
+      top: 100%;
+      border-top: 4px solid;
+    }
   </style>
 </head>
 <body>
 
-  <!-- MENÚ SUPERIOR -->
+  <!-- MENÚ -->
   <div class="menu">
     <a href="index.html">Mapa</a>
     <a href="tabla.html">Datos en tabla</a>
@@ -43,38 +83,79 @@
 
   <!-- Leaflet JS -->
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  
+
   <script>
-    // Inicializar mapa centrado en Uruguay
+    // Inicializar mapa
     const map = L.map('map').setView([-32.5228, -55.7658], 7);
 
     L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
       attribution: '&copy; OpenStreetMap contributors'
     }).addTo(map);
 
+    // Color según necesidad
     function getColor(necesidad) {
       if (necesidad === 0) return 'green';
-      else if (necesidad <= 2) return 'orange';
-      else return 'red';
+      if (necesidad <= 2) return 'orange';
+      return 'red';
+    }
+
+    // Forma según circuito
+    function getShape(circuito) {
+      if (circuito === 'URY 04') {
+        return 'circle';
+      }
+
+      if (['URY 02', 'URY 03', 'URY 06', 'URY 08'].includes(circuito)) {
+        return 'square';
+      }
+
+      if (['URY 01', 'URY 05', 'URY 07'].includes(circuito)) {
+        return 'hexagon';
+      }
+
+      return 'circle';
     }
 
     fetch('data.json')
       .then(response => response.json())
       .then(data => {
         data.forEach(item => {
-          L.circleMarker([item.lat, item.lng], {
-            radius: 8,
-            fillColor: getColor(item.necesidad_apoyo),
-            color: '#000',
-            weight: 1,
-            opacity: 1,
-            fillOpacity: 0.8
-          }).addTo(map)
-          .bindPopup(
-            `<b>${item.nombre}</b><br>` +
-            `Total de publicadores extranjeros: ${item.total_extranjeros}<br>` +
-            `Con necesidad de apoyo: ${item.necesidad_apoyo}`
-          );
+
+          const color = getColor(item.necesidad_apoyo);
+          const shape = getShape(item.circuito);
+
+          const icon = L.divIcon({
+            className: '',
+            html: `
+              <div class="marker ${shape}" style="
+                background:${shape === 'hexagon' ? color : color};
+                border-color:${color};
+              "></div>
+            `,
+            iconSize: [16, 16],
+            iconAnchor: [8, 8]
+          });
+
+          // Ajustes especiales para hexágono (colorear puntas)
+          if (shape === 'hexagon') {
+            icon.options.html = `
+              <div class="marker hexagon" style="background:${color}; border-color:${color};">
+                <style>
+                  .hexagon:before { border-bottom-color: ${color}; }
+                  .hexagon:after { border-top-color: ${color}; }
+                </style>
+              </div>
+            `;
+          }
+
+          L.marker([item.lat, item.lng], { icon })
+            .addTo(map)
+            .bindPopup(`
+              <b>${item.nombre}</b><br>
+              Circuito: ${item.circuito}<br>
+              Extranjeros: ${item.total_extranjeros}<br>
+              Necesidad de apoyo: ${item.necesidad_apoyo}
+            `);
         });
       })
       .catch(err => console.error('Error cargando data.json:', err));
