@@ -37,13 +37,12 @@
       box-sizing: border-box;
     }
 
+    /* CUADRADO */
+    .square { }
+
     /* CÍRCULO */
     .circle {
       border-radius: 50%;
-    }
-
-    /* CUADRADO */
-    .square {
     }
 
     /* TRIÁNGULO */
@@ -87,18 +86,19 @@
       return 'red';
     }
 
-    // Forma según circuito
+    // Forma según circuito (REGLAS NUEVAS)
     function getShape(circuito) {
-      if (circuito === 'URY 02', 'URY 03', 'URY 06', 'URY 08') {
-        return 'circle';
-      }
 
-      if (['URY 04'].includes(circuito)) {
+      if (circuito === 'URY 04') {
         return 'square';
       }
 
       if (['URY 01', 'URY 05', 'URY 07'].includes(circuito)) {
         return 'triangle';
+      }
+
+      if (['URY 02', 'URY 03', 'URY 06', 'URY 08'].includes(circuito)) {
+        return 'circle';
       }
 
       return 'circle';
