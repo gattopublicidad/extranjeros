@@ -74,4 +74,77 @@
 
   <script>
     // Inicializar mapa
-    const map = L.map('map').set
+    const map = L.map('map').setView([-32.5228, -55.7658], 7);
+
+    L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+      attribution: '&copy; OpenStreetMap contributors'
+    }).addTo(map);
+
+    // Color según necesidad
+    function getColor(necesidad) {
+      if (necesidad === 0) return 'green';
+      if (necesidad <= 2) return 'orange';
+      return 'red';
+    }
+
+    // Forma según circuito
+    function getShape(circuito) {
+      if (circuito === 'URY 02', 'URY 03', 'URY 06', 'URY 08') {
+        return 'circle';
+      }
+
+      if (['URY 04'].includes(circuito)) {
+        return 'square';
+      }
+
+      if (['URY 01', 'URY 05', 'URY 07'].includes(circuito)) {
+        return 'triangle';
+      }
+
+      return 'circle';
+    }
+
+    fetch('data.json')
+      .then(response => response.json())
+      .then(data => {
+        data.forEach(item => {
+
+          const color = getColor(item.necesidad_apoyo);
+          const shape = getShape(item.circuito);
+
+          let html = '';
+
+          if (shape === 'triangle') {
+            html = `
+              <div class="triangle" style="border-bottom-color:${color};"></div>
+            `;
+          } else {
+            html = `
+              <div class="marker ${shape}" style="
+                background:${color};
+                border-color:${color};
+              "></div>
+            `;
+          }
+
+          const icon = L.divIcon({
+            className: '',
+            html: html,
+            iconSize: [16, 16],
+            iconAnchor: [8, 8]
+          });
+
+          L.marker([item.lat, item.lng], { icon })
+            .addTo(map)
+            .bindPopup(`
+              <b>${item.nombre}</b><br>
+              Circuito: ${item.circuito}<br>
+              Extranjeros: ${item.total_extranjeros}<br>
+              Necesidad de apoyo: ${item.necesidad_apoyo}
+            `);
+        });
+      })
+      .catch(err => console.error('Error cargando data.json:', err));
+  </script>
+</body>
+</html>
